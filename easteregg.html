@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Yayyy</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="easteregg">
+            <img src="img/twitchalert.gif" id="twitchalert">
+            <h1 class="whitetext"><span id="pseudo"></span> a débloqué l'easteregg</h1>
+            <h1 class="whitetext">Bien joué !!!</h1>
+        </div>
+        <script>
+            const pseudo = localStorage.getItem("pseudo");
+
+            if (pseudo) {
+                    document.getElementById("pseudo").textContent = pseudo;
+                }
+            else {
+                    window.location.href = "name.html";
+                }
+        </script>
+    </body>
+</html>
